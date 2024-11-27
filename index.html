@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>P4</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="navbar-handle hidden"></div>
+
+    <div class="navbar hidden">
+      <div class="left-controls">
+        <button id="download-btn">Download Viz</button>
+        <div class="zoom-controls">
+          <span>Zoom Level:</span>
+          <input
+            type="range"
+            id="zoom-slider"
+            min="150"
+            max="400"
+            value="250"
+            step="50"
+          />
+          <span id="zoom-value">250%</span>
+        </div>
+      </div>
+
+      <div>
+        <span>By Daniel Wang</span>
+
+        <span>P4</span>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <object id="svg-object" data="img/Main.svg" type="image/svg+xml"></object>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
